@@ -9,3 +9,45 @@ body {
     max-width: 960px;
     width: 100%;
 }
+h1 {
+    text-align: left;
+}
+
+ul {
+    text-align: right;
+    list-style-type: none;
+}
+.overview-hero{
+    margin: 20px 20px 0 0;  
+    border:5px;
+    overflow: auto;
+}
+.overview-hero-image{
+    float: left;
+}
+.overview-hero-image img{
+   display: block;
+}
+.overview-hero-text{
+    float: right;
+    text-align: right;
+}
+.cards{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 4px;
+    grid-auto-flow: column;
+}
+.testing{
+    margin: 20px 20px 0 0;  
+    border:5px;
+    overflow: auto;
+}
+.testing-desciption{
+    float: left;
+    display: inline-block;
+}
+.btn{
+    float: right;
+}
