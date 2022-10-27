@@ -49,18 +49,19 @@ li a {
 }
 .overview-hero-image img{
    display: block;
-   border: 1px solid #ddd;
    border-radius: 4px;
    padding: 5px;
    width: 150px;
+   margin: 20px 20px 20px 20px;
 }
 .overview-hero-text{
     float: right;
     text-align: right;
+    margin: 20px 20px 20px 20px;
 }
 .learn-about h2 {
     font-size: 24px;
-    background-color: #48BB78;
+    color: #48BB78;
 }
 .learn-about h3{
     color: #48BB78;
@@ -68,43 +69,63 @@ li a {
 }
 
 .cards{
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    display: grid;
+    grid-auto-flow: column;
     gap: 4px;
-    border: 5px #E2E8F0;
-    box-shadow: inset;
+    align-items: center;
+    justify-items: center;
+    border: 5px;   
 
 }
+.cards::after{
+    content: "";
+    display: table;
+    clear: both;
+}
 .card{
-    flex: 33.33%;
+    font-size: 16px;
+    float: left;
+    width: 85%;
+    height: 95%;
     padding: 5px;
+    box-shadow:10px 10px 8px 10px #E2E8F0; 
+    margin: 6px;;
 }
 .cards img{
     border: 1px ;
     border-radius: 4px;
     padding: 5px;
-    width: 150px  
+    width: 150px ;
+    margin: 20px 20px 20px 20px;
 }
-.testing{
-    margin: 20px 20px 0 0;  
+.card-body{
+    margin: 20px 20px 20px 20px;
+}
+.testing{  
     border:5px;
     overflow: auto;
     background-color: #4A5568;
     color: white;
 }
 .testing-desciption{
+    margin: 20px 20px 20px 20px;
     display: inline-block;
 }
 .btn{
     background-color: #48BB78;
-    border: 5px;
+    border-radius: 5px;
     float: right;
 }
-
+.stories h2,p a{
+    color: #5A67D8;
+}
 .stories img{
     border-radius: 50%;
     padding: 5px;
     width: 150px;
     
+}
+.footer .container{
+    background-color: #4A5568;
+    color: white;
 }
