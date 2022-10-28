@@ -6,7 +6,9 @@ body {
 }
 
 .container {
-    margin: 0 auto;
+    margin-inline: auto;
+    margin: auto;
+    padding: 0 15px;
     max-width: 960px;
     width: 100%;
 }
@@ -39,25 +41,36 @@ li a {
   }
   
 .overview-hero{
-    margin: 20px 20px 0 0;  
-    border:5px;
-    overflow: auto;
+    text-align: left;
     background-color: #E2E8F0;
 }
-.overview-hero-image{
-    float: left;
+.overview-hero .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
 }
-.overview-hero-image img{
-   display: block;
+
+.overview-hero-image {
+   display: flex;
+   position: relative;
+   justify-content: center;
+   align-items: center;
+   margin: 20px 20px 20px 20px;
+}
+.overview-hero-image img {
    border-radius: 4px;
    padding: 5px;
    width: 150px;
-   margin: 20px 20px 20px 20px;
+
 }
-.overview-hero-text{
+.overview-hero-text h2,p{
+    display: flex;
+    align-items: center;
+    justify-content: left;
     float: right;
-    text-align: right;
-    margin: 20px 20px 20px 20px;
+    text-align: left;
+    margin: 20px 20px 20px 30px;
 }
 .learn-about h2 {
     font-size: 24px;
@@ -86,9 +99,9 @@ li a {
     font-size: 16px;
     float: left;
     width: 85%;
-    height: 95%;
+    height: 91%;
     padding: 5px;
-    box-shadow:10px 10px 8px 10px #E2E8F0; 
+    box-shadow:0px 0px 5px 5px #E2E8F0; 
     margin: 6px;;
 }
 .cards img{
@@ -101,31 +114,66 @@ li a {
 .card-body{
     margin: 20px 20px 20px 20px;
 }
-.testing{  
-    border:5px;
-    overflow: auto;
+
+.testing .container{
+    order:5px;
     background-color: #4A5568;
     color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+
 }
-.testing-desciption{
+.testing-desciption h2,p{
     margin: 20px 20px 20px 20px;
-    display: inline-block;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    float: left;
 }
 .btn{
     background-color: #48BB78;
     border-radius: 5px;
-    float: right;
+    padding: 0.68575rem 1.1875rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
 }
+
 .stories h2,p a{
     color: #5A67D8;
 }
-.stories img{
+.stories h3,p{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    float: left;
+}
+.stories .container img{
     border-radius: 50%;
     padding: 5px;
     width: 150px;
+    margin: 20px 20px 20px 20px;
     
+}
+
+.stories .article-body{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px 20px 30px;
 }
 .footer .container{
     background-color: #4A5568;
     color: white;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    text-align: center;
 }
