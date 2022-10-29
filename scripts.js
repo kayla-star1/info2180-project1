@@ -1,9 +1,10 @@
 /* Add your JavaScript to this file */
-windows.onload = function(){
-    var myForm = document.querySelector(#form);
+window.onload = function(){
+    var myForm = document.querySelector("form");
 
     myForm.addEventListener('submit', function (ele) {
         console.log('form submitted');
+        ele.preventDefault();
         var valFail =false;
 
         var email = document.querySelector('#email');
